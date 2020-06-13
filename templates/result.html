@@ -1,0 +1,23 @@
+{% extends "base_page.html" %}
+{% block title %}Result{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<!--<img src="{{ url_for('static', filename='images/uploads/1.jpg') }}"/>-->
+<!--<img src="{{ url_for('static', filename=image_path) }}" style="width:30vh"/>-->
+<table>
+        {% for a_list in images %}
+            <tr>
+                {% for i in a_list %}
+                    <td>
+                        <p class="percents">FROM: {{i[1]}}%</p>
+                        <img src="{{ url_for('static', filename=i[0]) }}" style="width:30vh"/>
+                        <p class="percents">TO: {{i[2]}}%</p>
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+</table>
+
+{% endblock %}

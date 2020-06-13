@@ -1,0 +1,18 @@
+{% extends "base_page.html" %}
+{% block title %}
+    {% block title2 %}{% endblock %}
+{% endblock %}
+{% block head %}
+    {{ super() }}
+    {{ dropzone.load_css() }}
+    {{ dropzone.style('border: 4px dashed #00cccc; margin: 2% 2% 0% 2%; min-height: 200px; background: #000; color: #999;') }}
+{% endblock %}
+{% block content %}
+    {% block explain %}{% endblock %}
+    {% block dropzone_action %}{% endblock %}
+    {{ dropzone.load_js() }}
+    {{ dropzone.config() }}
+    <div id="center-button">
+        {% block button %}{% endblock %}
+    </div>
+{% endblock %}

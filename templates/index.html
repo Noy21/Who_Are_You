@@ -1,0 +1,16 @@
+{% extends "base_upload.html" %}
+{% block title2 %}Index{% endblock %}
+
+{% block explain %}
+    <h4>Enter the images you want to change, then press submit</h4>
+{% endblock %}
+{% block dropzone_action %}
+    {{ dropzone.create(action='upload') }}
+{% endblock %}
+{% block button %}
+    <a href="/compare">
+        <button class="btn waves-effect waves-light" type="submit" name="action" style="background-color:#00cccc;">Submit
+            <i class="material-icons right">send</i>
+        </button>
+    </a>
+{% endblock %}
