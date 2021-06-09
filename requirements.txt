@@ -29,7 +29,7 @@ itsdangerous==1.1.0
 jsonschema==2.6.0
 numpy==1.18.3
 opencv-python==4.2.0.34
-pip==19.0.3
+pip==19.2
 protobuf==3.11.3
 pytz==2020.1
 requests==2.23.0
