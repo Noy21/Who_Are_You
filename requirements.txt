@@ -33,7 +33,7 @@ pip==19.0.3
 protobuf==3.11.3
 pytz==2020.1
 requests==2.23.0
-setuptools==40.8.0
+setuptools==65.5.1
 six==1.14.0
 sqlparse==0.3.1
 urllib3==1.25.9
